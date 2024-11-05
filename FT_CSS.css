@@ -11,7 +11,7 @@ header
     font-family: 'DragonHunter';
     font-weight: bold;
     font-size: 2.5em;
-    color: #670000;
+    color: rgb(103, 0, 0);
     text-align: center;
     background-color: #DBC69F;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
@@ -187,3 +187,43 @@ p
 }
 
 /* Los tentaculos fin*/
+
+.Actos
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Acto
+{
+    background-color: #fce0aa;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    transition: 1s;  
+}
+
+.Acto:hover
+{
+    box-shadow: 0px 0px 15px rgba(103, 0, 0, 0.756);
+}
+
+.Actostext
+{   
+    font-family: 'DragonHunter';
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 auto;
+    color: rgb(103, 0, 0);
+    text-align: center;
+    padding: 110px 100px 100px 100px;
+}
+
+a
+{
+    text-decoration: none;
+    margin: auto;
+}
