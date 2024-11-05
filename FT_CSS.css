@@ -5,6 +5,13 @@
     font-weight: bold;
   }
 
+  @font-face {
+    font-family:'Lofi';
+    src:url(LofiCottage.otf);
+    font-style: bold;
+    font-weight: bold;
+  }
+
 
 header
 {
@@ -14,7 +21,7 @@ header
     position: sticky;
     top: 0;
     background-color: #DBC69F;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 12px 25px 25px rgba(0, 0, 0, 0.163);
     width: 100%;
     height: 100px;
     z-index: 5;
@@ -25,9 +32,7 @@ header
     animation-timeline: scroll();
     animation-name: shrink;
 
-    animation-range: 0% 100%;
-
-    
+    animation-range: 0% 100%;   
 }
 
 h1
@@ -73,14 +78,36 @@ body
 
 /*Aqui empiezan las News primero parte izquierda luego derecha, seguido del Hover que las hace mas grandes*/
 
+.NoticieroLeft
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.NoticieroRight
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
 .NewsLeft
 {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+    max-width: fit-content;
     display: flex;
-    justify-content: left;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fce0aa;
+    border-radius: 30px;
+    transition: 1s;
+
     view-timeline-name: --image;
     view-timeline-axis: block;
 
@@ -89,26 +116,19 @@ body
 
     animation-range: entry 0% cover 50%;
     animation-fill-mode: both;
-}
-
-.NewsLeft div
-{
-    background-color: #fce0aa;
-    border-radius: 30px;
-    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.1);
-    max-width: fit-content;
-    max-height: fit-content;
-    display: flex;
-    transition: 1s;
 }
 
 .NewsRight
 {
-    margin-right: 50px;
     margin-left: 50px;
+    margin-right: 50px;
     margin-top: 50px;
+    max-width: fit-content;
     display: flex;
-    justify-content: right;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fce0aa;
+    border-radius: 30px;
     transition: 1s;
 
     view-timeline-name: --image;
@@ -121,17 +141,6 @@ body
     animation-fill-mode: both;
 }
 
-.NewsRight div
-{
-
-    background-color: #fce0aa;
-    border-radius: 30px;
-    box-shadow: -3px 5px 8px rgba(0, 0, 0, 0.1);
-    max-width: fit-content;
-    max-height: fit-content;
-    display: flex;
-    transition: 1s;
-}
 
 .INews
 {
@@ -143,12 +152,12 @@ body
     margin: 10px;
 }
 
-.NewsLeft div:hover
+.NewsLeft:hover
 {
     transform: scale(1.1);
 }
 
-.NewsRight div:hover
+.NewsRight:hover
 {
     transform: scale(1.1);
 }
@@ -157,7 +166,7 @@ p
 {
     margin-left: 20px;
     margin-right: 20px;
-    font-family: 'DragonHunter';
+    font-family: 'lofi';
     font-size: 1em;
     text-align: start;
     color: rgb(84, 84, 84);    
@@ -273,17 +282,15 @@ a
 
 @keyframes shrink {
 
-    0% {
-        margin-left: 0%;
-        height: 100px;
-        width: 100%;
+    0% {       
+        height: 100px;        
         border-radius: 0px 0px 0px 0px;
+
     }
 
-    100% {
-        margin-left: 20%;
+    100% {       
         height: 60px;
-        width: 60%;
         border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.33);
     }
 }
