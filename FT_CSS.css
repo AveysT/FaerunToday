@@ -273,8 +273,8 @@ a
     bottom: 0px;
     right: 0px;
     opacity: 0.4;
-    min-width: 50%;
-    min-height: 50%;
+    min-width: 100%;
+    min-height: 100%;
     width: auto;
     height: auto;
     z-index: -1000;
