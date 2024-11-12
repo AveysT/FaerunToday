@@ -66,9 +66,8 @@ a
 
 /*Css de la parte de las noticias*/
 
-section
+.News
 {
-    background-color: rgba(0, 255, 166, 0.37);
     display: flex;
     justify-content: center;
 }
@@ -76,7 +75,6 @@ section
 .News_list
 {
     margin: auto;
-    background-color: rgba(0, 0, 0, 0.499);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,17 +97,57 @@ section
 
 }
 
+.News_border
+{
+    background-image:url()
+}
+
 .News_corner_tl
 {
     background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
-    top: 0;
-    left: 0;
-    background-position: 50%;
+    top: 0.2px;
+    left: -0.5px;
     background-size: contain;
-    height: 100px;
-    width: 100px;
+    height: 86px;
+    width: 86px;
     position: absolute;
     z-index: 5;
+}
+.News_corner_tr
+{
+    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    top: 0.2px;
+    right: -0.5px;
+    background-size: contain;
+    height: 86px;
+    width: 86px;
+    position: absolute;
+    z-index: 5;
+    transform: scaleX(-1);
+}
+.News_corner_bl
+{
+    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    bottom: 0;
+    left: -0.5px;
+    background-size: contain;
+    height: 86px;
+    width: 86px;
+    position: absolute;
+    z-index: 5;
+    transform: scaleY(-1);
+}
+.News_corner_br
+{
+    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    bottom: 0;
+    right: -0px;
+    background-size: contain;
+    height: 86px;
+    width: 86px;
+    position: absolute;
+    z-index: 5;
+    transform: scale3d(-1, -1, 1)
 }
 
 
