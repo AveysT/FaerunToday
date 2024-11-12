@@ -99,54 +99,68 @@ a
 
 .News_border
 {
-    background-image:url()
+    background-image:url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Border.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    width: 500px;
+    position: absolute;
+    z-index: 5;
+    pointer-events:none;  
 }
-
 .News_corner_tl
 {
     background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
-    top: 0.2px;
-    left: -0.5px;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: -0px;
     background-size: contain;
-    height: 86px;
-    width: 86px;
+    height: 90px;
+    width: 90px;
     position: absolute;
     z-index: 5;
+    pointer-events:none; 
 }
 .News_corner_tr
 {
     background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
-    top: 0.2px;
-    right: -0.5px;
+    background-repeat: no-repeat;
+    top: 0px;
+    right: 0px;
     background-size: contain;
-    height: 86px;
-    width: 86px;
+    height: 90px;
+    width: 90px;
     position: absolute;
     z-index: 5;
+    pointer-events:none; 
     transform: scaleX(-1);
 }
 .News_corner_bl
 {
     background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    background-repeat: no-repeat;
     bottom: 0;
-    left: -0.5px;
+    left: 0px;
     background-size: contain;
-    height: 86px;
-    width: 86px;
+    height: 90px;
+    width: 90px;
     position: absolute;
     z-index: 5;
+    pointer-events:none; 
     transform: scaleY(-1);
 }
 .News_corner_br
 {
     background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    background-repeat: no-repeat;
     bottom: 0;
-    right: -0px;
+    right: 0px;
     background-size: contain;
-    height: 86px;
-    width: 86px;
+    height: 90px;
+    width: 90px;
     position: absolute;
     z-index: 5;
+    pointer-events:none; 
     transform: scale3d(-1, -1, 1)
 }
 
@@ -163,6 +177,7 @@ a
     mask: url(https://raw.githubusercontent.com/AveysT/FaerunToday/refs/heads/main/IMG/IMG_Mask.png);
     mask-size: cover;
     transition: 1s;
+    z-index: 4;
 }
 
 .News_img:hover
