@@ -17,6 +17,16 @@
 
 /*CSS de Header, body y estilos de texto */
 
+.video_background
+ {
+    position: fixed;
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
 header
 {
     margin: 0 auto;
@@ -25,6 +35,7 @@ header
     position: sticky;
     top: 0;
     background-color: #DBC69F;
+    border: 3px solid #b4906d;
     box-shadow: 0px 12px 25px 25px rgba(0, 0, 0, 0.163);
     width: 100%;
     height: 100px;
@@ -38,6 +49,38 @@ header
 
     animation-range: 0% 100%;   
 }
+
+/*--------------------------------------------------------------------------------------------*/
+/*Animacion del header*/
+
+@keyframes show {
+    from {
+        opacity: 0.2;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@keyframes shrink {
+
+    0% {       
+        height: 100px;        
+        border-radius: 0px 0px 0px 0px;
+
+    }
+
+    100% {       
+        height: 60px;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.33);
+    }
+}
+
+/*--------------------------------------------------------------------------------------------*/
 
 body
 {
@@ -64,7 +107,7 @@ a
 
 /*-----------------------------------*/
 
-/*Css de la parte de las noticias*/
+/*Css de la parte de la distribucion de las noticias*/
 
 .News
 {
@@ -83,6 +126,8 @@ a
     height: 100%;
 }
 
+/*Css del contenedor de noticias*/
+
 .News_container
 {
     display: flex;
@@ -91,7 +136,7 @@ a
     flex-basis: 500px;
     align-items: flex-start;
     margin: 0 30px 0 30px;
-    background-color: rgba(0, 0, 0, 0.203);
+    background-color: rgba(15, 10, 3, 0.8);
     height: 650px;
     mask: radial-gradient(circle 5px at 5px 5px , transparent 100%, #000000) -5px -5px;
 
@@ -108,6 +153,9 @@ a
     z-index: 5;
     pointer-events:none;  
 }
+
+/*Css de las esquinas*/
+
 .News_corner_tl
 {
     background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/EXTRA/Container_Corner.png?raw=true);
@@ -164,6 +212,7 @@ a
     transform: scale3d(-1, -1, 1)
 }
 
+/*Css de la IMG*/
 
 .News_img
 {
@@ -175,9 +224,8 @@ a
     top: -10%;
     position: absolute;
     mask: url(https://raw.githubusercontent.com/AveysT/FaerunToday/refs/heads/main/IMG/EXTRA/News_IMG_Mask.png);
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: bottom;
+    mask-size: cover;
+    mask-origin: 0 0 100px 0;
     transition: 1s;
     z-index: 4;
 }
@@ -187,14 +235,37 @@ a
     transform: translatey(30px);
 }
 
+/*Css del texto*/
+
 .News_text
 {
-
     bottom: 0;
     position: absolute;
     width: 410px;
-    height: 325px;
-    z-index: 1;
-    padding: 0 45px 30px 45px;
+    height: 250px;
+    z-index: 6;
+    padding: 0 45px 30px 50px;
+    pointer-events: none;
+}
+
+h3
+{
+    font-family: Lofi;
+    font-weight: bolder;
+    font-size: 2em;
+    background: linear-gradient(135deg, #fff, #fbcea0 66%, #fbcfa0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+p
+{
+    font-family: Lofi;
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: #e5b186;
+    pointer-events: none;
 }
 
