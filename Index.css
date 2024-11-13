@@ -99,7 +99,7 @@ a
 
 .News_border
 {
-    background-image:url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Border.png?raw=true);
+    background-image:url(https://github.com/AveysT/FaerunToday/blob/main/IMG/EXTRA/Container_Border.png?raw=true);
     background-repeat: no-repeat;
     background-size: contain;
     height: 650px;
@@ -110,7 +110,7 @@ a
 }
 .News_corner_tl
 {
-    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/EXTRA/Container_Corner.png?raw=true);
     background-repeat: no-repeat;
     top: 0px;
     left: -0px;
@@ -123,7 +123,7 @@ a
 }
 .News_corner_tr
 {
-    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/EXTRA/Container_Corner.png?raw=true);
     background-repeat: no-repeat;
     top: 0px;
     right: 0px;
@@ -137,7 +137,7 @@ a
 }
 .News_corner_bl
 {
-    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/EXTRA/Container_Corner.png?raw=true);
     background-repeat: no-repeat;
     bottom: 0;
     left: 0px;
@@ -151,7 +151,7 @@ a
 }
 .News_corner_br
 {
-    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/Container_Corner.png?raw=true);
+    background-image: url(https://github.com/AveysT/FaerunToday/blob/main/IMG/EXTRA/Container_Corner.png?raw=true);
     background-repeat: no-repeat;
     bottom: 0;
     right: 0px;
@@ -174,8 +174,10 @@ a
     left: 0;
     top: -10%;
     position: absolute;
-    mask: url(https://raw.githubusercontent.com/AveysT/FaerunToday/refs/heads/main/IMG/IMG_Mask.png);
-    mask-size: cover;
+    mask: url(https://raw.githubusercontent.com/AveysT/FaerunToday/refs/heads/main/IMG/EXTRA/News_IMG_Mask.png);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: bottom;
     transition: 1s;
     z-index: 4;
 }
@@ -187,7 +189,7 @@ a
 
 .News_text
 {
-    background-color: #ff0000;
+
     bottom: 0;
     position: absolute;
     width: 410px;
