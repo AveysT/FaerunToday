@@ -20,10 +20,13 @@
 .video_background
  {
     position: fixed;
-    opacity: 0.4;
+
     height: 100%;
     width: 100%;
     object-fit: cover;
+    mask-image: url(https://raw.githubusercontent.com/AveysT/FaerunToday/refs/heads/main/IMG/EXTRA/News_IMG_Mask.png);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
     z-index: -10;
 }
 
@@ -31,24 +34,64 @@ header
 {
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    justify-content: center;
     position: sticky;
-    top: 0;
-    background-color: #DBC69F;
-    border: 3px solid #b4906d;
+    top: 0px;
+    background: linear-gradient( #fbcfa0, #fbcea0 33%, #91653a);
+    outline: 3px solid #b4906d;
+    border-top: 3px solid #b4906d;
     box-shadow: 0px 12px 25px 25px rgba(0, 0, 0, 0.163);
     width: 100%;
     height: 100px;
     z-index: 5;
-
     view-timeline-name: scroll();
     view-timeline-axis: block;
-
     animation-timeline: scroll();
     animation-name: shrink;
-
     animation-range: 0% 100%;   
 }
+
+.Header_deco
+{
+    background-image: url(https://raw.githubusercontent.com/AveysT/FaerunToday/refs/heads/main/IMG/EXTRA/Header_Deco.png);
+    background-repeat: no-repeat;
+    bottom: -83px;
+    background-size: contain;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    pointer-events:none; 
+}
+
+.Act_container
+{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.Act_items
+{
+    background-color: rgba(15, 10, 3, 0.8);
+    border: 2px solid #b4906d;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mask: radial-gradient(circle 5px at 5px 5px , transparent 100%, #000000) -5px -5px;  
+}
+
+h2
+{
+    font-family: Lofi;
+    font-size: 2em;
+
+}
+
+
+
 
 /*--------------------------------------------------------------------------------------------*/
 /*Animacion del header*/
