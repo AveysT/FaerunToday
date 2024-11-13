@@ -185,3 +185,14 @@ a
     transform: translatey(30px);
 }
 
+.News_text
+{
+    background-color: #ff0000;
+    bottom: 0;
+    position: absolute;
+    width: 410px;
+    height: 325px;
+    z-index: 1;
+    padding: 0 45px 30px 45px;
+}
+
